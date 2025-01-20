@@ -1,0 +1,352 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(160deg, #ffffff, #ceedff)
+}
+
+/* Banner Styling */
+.banner {
+  position: sticky;
+  top: 0;
+  background-color: #58b4ff;
+  text-align: center;
+  padding: 15px;
+  width: 100%; /*adjustment for responsiveness */
+}
+.banner-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 18px;
+}
+.banner-link:hover {
+  background-color: #0077ff;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px;
+  /* Adjust the size of the logo image */
+  height: auto;
+  margin-right: 10px;
+  margin-left: 300px;
+}
+
+.site-name {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: #d1d1d1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(163, 141, 141, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+/* Show Dropdown on Hover */
+.navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+.try-free {
+  background-color: #58b4ff;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-right: 300px;
+}
+
+.try-free:hover {
+  background-color: #ff2a0e;
+}
+
+/* Headings Section Styling */
+.headings {
+  text-align: center;
+  margin: 40px 0; /* Adds some space above and below the headings */
+  padding: 0 10px; /*some padding for smaller screens*/
+}
+.headings h1 {
+  font-family: "Sofia", sans-serif;
+  font-size: 25px;
+  margin: 30px 0
+}
+.headings h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  margin: 30px 0
+}
+.headings h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px; /* Adjust the size as needed */
+  margin: 30px 0
+}
+
+/* Button Container Styling */
+.button-container {
+  text-align: center;
+  margin: 40px 0;
+  padding: 0 10px; /*for responsiveness*/
+}
+
+/* Big Button Styling */
+.big-button {
+  font-size: 24px; /* Larger font size for the button */
+  font-weight: bold;
+  padding: 20px 40px; /* Larger padding for the button */
+  background-color: #58b4ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.big-button:hover {
+  background-color: #1976d2;
+}
+
+/* Button Text Styling */
+.button-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Benefits Section Styling */
+.benefits {
+  display: flex;
+  justify-content: center; /* Center align the benefits */
+  margin: 20px 0;
+}
+.benefits p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin: 0 15px; /* Space between benefits */
+}
+.benefits i {
+  color: #78c2ff;
+  margin-right: 10px;
+}
+
+/* Video Container Styling */
+.video-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: right; /* Center the content */
+  width: 900px; 
+  margin: 100px auto; /* Center container horizontally */
+  width: 100%; /*adjustments for responsiveness*/
+  max-width: 900px; /*adjustments for responsiveness*/
+}
+
+.video-banner {
+  width: 100%; /* Full width of the container */
+  background-color: #0077ff; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+.video-banner p {
+  font-size: 16px;
+}
+
+.video-container iframe {
+  width: 100%; 
+  height: 500px;
+  border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+}
+
+/* Icons Container Styling */
+.icons-container {
+  display: flex; /* Arrange items in a row */
+  justify-content: space-around; /* Evenly space out the icons */
+  margin: 20px 0;
+  width: 100%; /* Ensure it matches the video width */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column; /* Arrange icon and text vertically */
+  align-items: center; /* Center align the content */
+  font-size: 40px; /* Adjust the icon size */
+  color: #929292; /* Set the icon color */
+}
+
+.icon p {
+  font-size: 14px; /* Adjust the text size */
+  color: #929292;
+  margin-top: 10px; /* Add space between icon and text */
+}
+
+.star-image {
+  width: 200px;
+  height: 30px;
+  object-fit: cover; /* Ensure images are properly centered and cover the area */
+}
+
+/* Review Block Styling */
+.reviews-container {
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Center the review blocks */ 
+  gap: 40px; /* Add space between review blocks */
+  margin: 40px 0;
+  text-align: center; /* Center align the content within each block */
+}
+
+.review-block {
+  width: 250px; /* Adjust the width of each review block */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a slight shadow */
+  position: relative; /* Allow positioning of child elements */
+  margin-top: 50px; /* Move block down to accommodate image */
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensure images are properly centered and cover the area */
+  position: absolute; /* Place image absolutely */
+  top: -50px; /* Move image up */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for image width */
+}
+
+.reviewer-name {
+  font-size: 18px;
+  color: #333;
+  margin-top: 60px; /* Push name down to make way for image */
+}
+
+.review-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+/* Responsive Adjustments */
+
+/* Make Navbar items stack for small screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+      margin-left: 0;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      margin-left: 0;
+  }
+
+  .try-free {
+      margin-right: 0;
+  }
+}
+
+/* Align icons for small screens */
+@media (max-width: 768px) {
+  .icons-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .icon {
+      margin: 10px 0;
+  }
+}
+
+/* Ensure review blocks are stacked on smaller screens */
+@media (max-width: 768px) {
+  .reviews-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .review-block {
+      margin: 20px 0;
+      width: 80%;
+  }
+}
+
+
